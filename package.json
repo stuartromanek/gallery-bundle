@@ -1,0 +1,22 @@
+{
+  "name": "gallery-bundle",
+  "version": "2.0.0",
+  "description": "An in-context gallery widget for ApostropheCMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apostrophecms/apostrophe-personas.git"
+  },
+  "keywords": [
+    "gallery",
+    "apostrophecms",
+    "apostrophe",
+    "widget",
+    "image"
+  ],
+  "author": "Stuart Romanek",
+  "license": "MIT"
+}
