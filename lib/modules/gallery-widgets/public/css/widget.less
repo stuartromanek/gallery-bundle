@@ -1,0 +1,38 @@
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  padding: 3rem;
+}
+
+.gallery--layout-two {
+  grid-template-columns: 50% 50%;
+}
+
+.gallery--layout-three {
+  grid-template-columns: 33% 33% 33%;
+}
+
+.gallery--layout-four {
+  grid-template-columns: 25%  25% 25% 25%
+}
+
+.gallery img {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-toggle-active {
+  background-color: #e8e8e8 !important;
+  .fa { 
+    color: @apos-green;
+  }
+}
+
+.gallery-toggle-inactive {
+  opacity: 0.4;
+}

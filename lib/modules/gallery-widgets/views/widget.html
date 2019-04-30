@@ -1,1 +1,10 @@
-the dang widget
+{% set w = data.widget %}
+{% set layout = w.layout or 'three' %}
+<section class="gallery gallery--layout-{{ layout }}" data-gallery data-gallery-lightbox='{{ w.enableLightbox }}'>
+  {% for image in w._pieces %}
+    {%- set relationship = image.relationship -%}
+    {% if w.enableLightbox %}<a data-fancybox="gallery" href="{{ apos.attachments.url(image.item.attachment, { size: 'full', crop: relationship }) }}">{% endif %}
+      <img src="{{ apos.attachments.url(image.item.attachment, { size: 'full', crop: relationship }) }}" />
+    {% if w.enableLightbox %}</a>{% endif %}
+  {% endfor %}
+</section>
